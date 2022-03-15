@@ -1,10 +1,13 @@
-
+import {Route} from 'react-router-dom';
 import './App.css';
+import BoxOffice from './pages/boxoffice/BoxOffice';
 
 function App() {
   return (
-    <div className="App">
-      This is where my application starts Here
+    <div>
+      <Route path='/boxoffice'>
+        <BoxOffice/>
+      </Route> 
     </div>
   );
 }
