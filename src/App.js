@@ -1,14 +1,14 @@
-import {Route} from 'react-router-dom';
-import './App.css';
+import {Route, Routes} from 'react-router-dom';
+// import './App.css';
 import BoxOffice from './pages/boxoffice/BoxOffice';
+import ScndBoxOffice from './pages/scondboxoffice/ScndBoxOffice';
 
 function App() {
   return (
-    <div>
-      <Route path='/boxoffice'>
-        <BoxOffice/>
-      </Route> 
-    </div>
+      <Routes>
+      <Route path='/' element={<BoxOffice/>}/>
+      <Route path='/scndboxoffice' element={<ScndBoxOffice/>}/>
+      </Routes>
   );
 }
 
